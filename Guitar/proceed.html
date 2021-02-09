@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Center</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="stylesheet1.css">
+</head>
+
+<body>
+
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-sm bg-transparent navbar-dark justify-content-center align-items-center">
+        <!-- Brand/logo -->
+        <a class="navbar-brand active" href="guitar.html">
+            <img src="image.png" alt="logo" style="width:100px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Guitars</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Electric Guitars </a>
+                    <a class="dropdown-item" href="#">Aucostic Guitars</a>
+                    <a class="dropdown-item" href="#">Used Guitars</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Drums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Keyboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gift Cards</a>
+            </li>
+        </ul>
+    </nav>
+
+        
+            <div class="mx-auto" style="width: fit-content;">
+                <img id="guitarImg" src="" alt="Product --Picture" height="400px">
+            </div>
+            <div class="container mt-4 mb-4" style="background-color: rgba(245,245,245 ,0.15);">
+
+                <h4 class="text-white">Product Description</h4>
+                <p id="descript" class="text-white" style="margin: 1rem;"></p>
+
+                <h4 class="text-white">Shipping Info</h4>
+                <p id="shipInfo" class="text-white" style="margin: 1rem; font-size: large;"></p>
+
+                <h4 class="text-white">Price</h4>
+                <p id="custRev" class="text-white" style="margin: 1rem; font-size: large;"></p>
+
+                <h4 class="text-white">Stock Left!!!</h4>
+                <p id="stock" class="text-white" style="margin: 1rem; font-size: large;"></p>
+
+            </div>
+        
+    <div id="summary" class="container mt-4 mb-4" style="background-color:rgba(245,245,245 ,0.15 ) ;">
+        <h3 class="text-white mt-4 mb-3">Billing info</h3>
+        <p class="text-white mb-3">Name: <span id="vName" class="text-white"> </span></p>
+        <p class="text-white mb-3">Email: <span id="vEmail" class="text-white"> </span></p>
+        <p class="text-white mb-3">Address: <span id="vAddress" class="text-white" ></span></p>
+        <p class="text-white mb-3">CreditCard Info: <span id="vCC" class="text-white"></span></p>
+
+        <hr class="mb-4" style="border:1px solid white">
+
+
+        <input type="button" id="goToHome" class="btn btn-dark btn-lg btn-block mb-6" value="Continue Shopping">
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="proceed.js"></script>
+</body>
+
+</html>

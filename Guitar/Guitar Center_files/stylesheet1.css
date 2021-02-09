@@ -1,0 +1,11 @@
+body {
+  background-image: url("2body-bg.png");
+}
+
+nav ul li a {
+  font-size: 20px;
+}
+
+#guitarImg {
+  margin: 20px;
+}

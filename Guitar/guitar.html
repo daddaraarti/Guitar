@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Center</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet1.css">
+</head>
+
+<body>
+
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-sm bg-transparent navbar-dark justify-content-center align-items-center">
+        <!-- Brand/logo -->
+        <a class="navbar-brand active" href="guitar.html">
+            <img src="image.png" alt="logo" style="width:100px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Guitars</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Electric Guitars </a>
+                    <a class="dropdown-item" href="#">Aucostic Guitars</a>
+                    <a class="dropdown-item" href="#">Used Guitars</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Drums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Keyboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gift Cards</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Picture Bar-->
+    <div class="mx-auto" style="width: fit-content;">
+        <div class="align-items-center justify-content-center">
+            <button onclick="preNext()" type="button" id="prev" class="btn btn-dark ">
+                <img src="prev_next.png" alt="prev" height="50px" style="transform: rotate(180deg)">
+            </button>
+
+            <img id="guitarImg" src="main.jpg" alt="Sale" height="400px">
+
+            <button onclick="preNext()" type="button" id="next" class="btn btn-dark ">
+                <img src="prev_next.png" alt="prev" height="50px">
+            </button>
+
+        </div>
+    </div>
+
+    <!--Discription Div-->
+
+    <div id="infoDiv" class="mx-auto" style="width: 1000px;">
+
+        <div id="discription" style="margin:1rem;">
+            <button type="button" class="btn btn-dark shadow-lg" data-toggle="collapse" data-target="#descript">Discription<span
+                    style="margin-left: 20px;">+</span></button>
+            <p id="descript" class="collapse text-white" style="margin: 1rem;"></p>
+        </div>
+
+        <div id="shipping" style="margin:1rem;">
+            <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#shipInfo">Shipping
+                Details<span style="margin-left: 20px;">+</span></button>
+            <p id="shipInfo" class="collapse text-white" style="margin: 1rem;"></p>
+        </div>
+        <div id="review" style="margin:1rem;">
+            <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#custRev">Customer Reviews<span style="margin-left: 20px;">+</span></button>
+            <p id="custRev" class="collapse text-white" style="margin: 1rem;"></p>
+        </div>
+
+    </div>
+
+    <!--Buy-->
+    <div class="mx-auto " style="width: fit-content;">
+        <button id="buy" type="button" class="btn btn-lg btn-dark" >Buy</button>
+    </div>
+
+
+
+
+
+
+
+    <script src="guitar.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
